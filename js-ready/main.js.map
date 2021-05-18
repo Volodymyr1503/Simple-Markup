@@ -1,1 +1,1 @@
-{"version":3,"sources":["..\\src\\js\\header.js"],"names":["document","querySelector","addEventListener","window","scroll"],"mappings":"aAAAA,SAAAC,cAAA,mBAAAC,iBAAA,QAAA,oEAEA,0EACA,qEACA,6DACA,0DACA,UAGA,OAAAC,OAAAC,8DAEA"}
+{"version":3,"sources":["..\\src\\js\\header.js"],"names":["document","querySelector","addEventListener"],"mappings":"aAAAA,SAAAC,cAAA,mBAAAC,iBAAA,QAAA,oEAEA,0EACA,qEACA,6DACA,0DACA"}

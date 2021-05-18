@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 16px; }
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Roboto" sans-serif; }
 
 .header {
   background-size: cover;
@@ -206,6 +208,90 @@
     font-size: 16px;
     margin-left: -20px;
     z-index: 33; }
+    .footer__submit:hover {
+      background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+      transition: .4s; }
+  .footer__navs {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__link {
+    position: relative;
+    cursor: pointer;
+    margin: 40px; }
+    .footer__link:first-child {
+      margin-left: 0; }
+  .footer__circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 22; }
+  .footer__site {
+    position: absolute;
+    z-index: 33; }
+    .footer__site:nth-child(1) {
+      top: 15px;
+      left: 7px; }
+    .footer__site:nth-child(2) {
+      top: 15px;
+      left: 8px; }
+    .footer__site:nth-child(3) {
+      top: 15px;
+      left: 87px; }
+    .footer__site:nth-child(4) {
+      top: 11px;
+      left: 25px; }
+
+.footer {
+  background-image: url("../../images/bgc.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 190vh;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px; }
+  .footer__title {
+    font-weight: bold;
+    line-height: 140%;
+    font-size: 3em; }
+  .footer__subtitle {
+    width: 30%;
+    margin-top: 30px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: center; }
+  .footer__subscribe {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .footer__email {
+    color: #FFFFFF !important;
+    width: 300px;
+    padding: 10px 16px;
+    opacity: 25%;
+    border-radius: 50px 0 0 50px;
+    overflow: hidden;
+    z-index: 23; }
+    .footer__email:placeholder-shown {
+      color: #FFFFFF; }
+  .footer__submit {
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    padding: 10px 30px;
+    border-radius: 25px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: -20px;
+    z-index: 333; }
     .footer__submit:hover {
       background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
       transition: .4s; }

@@ -7,6 +7,3 @@ document.querySelector(".header__burger").addEventListener("click", () => {
 })
 
 
-if (window.scroll() > 10 + "px") {
-    document.querySelector(".header").style.background = "black";
-}
