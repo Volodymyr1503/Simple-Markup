@@ -1,6 +1,7 @@
 $colorTextMain: #FFFFFF;
 $fontSize: 16px;
 $bcPurple: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+$bcRed: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
 $clockBc: #121212;
 
 @mixin resetStyles {
@@ -8,12 +9,17 @@ $clockBc: #121212;
     padding: 0;
 }
 @mixin btnStyle {
+    background: $bcPurple;
     padding: 10px 30px;
     border-radius: 25px;
     border-style: none;
     color: $colorTextMain;
     cursor: pointer;
     font-size: $fontSize;
+    &:hover {
+        background: $bcRed;
+        transition: .4s;
+    }
 }
 
 @mixin dFlex ($direct, $justify, $align) {

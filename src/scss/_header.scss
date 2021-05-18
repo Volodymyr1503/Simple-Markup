@@ -1,5 +1,9 @@
+* {
+    @include resetStyles;
+    font-size: $fontSize;
+}
+
 .header {
-    background-image: url("../../images/main__bgc.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -20,7 +24,7 @@
     }
     &__body {
         @include dFlex (row, space-between, center);
-        padding: 40px 80px;
+        padding: 40px 6%;
     }
     &__logo {
         margin-right: 15px;
@@ -38,38 +42,12 @@
         text-decoration: none;
         color: $colorTextMain;
         margin-right: 3.5em;
-    }
-    &__link:hover {
-        color: red;
+        &:hover {
+            color: #C89AFC;
+        }
     }
     &__button {
         @include btnStyle;
-        background: $bcPurple;
         z-index: 220;
-    }
-    &__content {
-        display: flex;
-        justify-content: flex-start;
-    }
-    &__title {
-        width: 50%;
-        margin: 8% 12%;
-        font-size: 4em;
-    }
-    &__clocks {
-        @include dFlex (row, flex-start, center);
-        margin-left: 12%;
-    }
-    &__count {
-        width: 3%;
-        height: 0.8%;
-        padding: 20px 30px;
-        margin: 15px;
-        @include dFlex (column, center, center);
-        background-color: $clockBc;
-        color: $colorTextMain;
-    }
-    &__count:first-child {
-        margin-left: 0;
     }
 }
