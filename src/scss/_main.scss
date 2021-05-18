@@ -1,4 +1,175 @@
-* {
-    @include resetStyles;
-    font-size: $fontSize;
+.main {
+    background-image: url("../../images/first__bgc.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    color: $colorTextMain;
+    @include dFlex (row, flex-start, center);
+    &__content {
+        padding-left: 6%;
+    }
+    &__title {
+        width: 60%;
+        font-size: 4em;
+        margin-bottom: 30px;
+    }
+    &__clocks {
+        @include dFlex (row, flex-start, center);
+    }
+    &__count {
+        padding: 16px 30px;
+        margin: 15px;
+        @include dFlex (column, center, center);
+        background-color: $clockBc;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    &__timer {
+        font-size: 2.25em;
+        margin-bottom: 10px;
+    }
+}
+
+.subscription {
+    @include dFlex (row, space-around, center);
+    padding: 43px 0;
+    width: 100%;
+    background: $clockBc;
+    color: $colorTextMain;
+    &__button {
+       @include btnStyle;
+    }
+    &__status {
+        @include dFlex(row, space-around, center);
+    }
+    &__info {
+        margin: 0 10px;
+    }
+    &__range {
+        width: 440px;
+        background-color: $bcPurple;
+        color: $bcPurple;
+    }
+    &__values {
+        @include dFlex (row, space-between, center);
+    }
+}
+
+.important {
+    background-image: url("../../images/bgc.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10vh;
+    color: $colorTextMain;
+    &__work {
+        @include dFlex(row, space-around, center);
+        padding: 100px 6%;
+    }
+    &__rectangle {
+        position: relative;
+    }
+    &__graph {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    }
+
+    &__description {
+        width:55%;
+        margin-left: 130px;
+    }
+    &__title {
+        font-weight: bold;
+        line-height: 140%;
+        font-size: 3em;
+        margin-bottom: 45px;
+    }
+    &__subtitle {
+        line-height: 25.6px;
+    }
+}
+
+.footer {
+    background-image: url("../../images/bgc.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 190vh;
+    color: $colorTextMain;
+    @include dFlex(column, center, center);
+    padding-top: 150px;
+    &__title {
+        font-weight: bold;
+        line-height: 140%;
+        font-size: 3em;
+    }
+    &__subtitle {
+        width: 30%;
+        margin-top: 30px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: center;
+    }
+    &__subscribe {
+        margin-top: 60px;
+        @include dFlex(row, center, center);
+    }
+    &__email {
+        color: $colorTextMain !important;
+        width: 300px;
+        padding: 10px 16px;
+        opacity: 25%;
+        border-radius: 50px 0 0 50px;
+        overflow: hidden;
+        z-index: 23;
+        &:placeholder-shown {
+            color: $colorTextMain;
+        }
+    }
+    &__submit {
+        @include btnStyle;
+        margin-left: -20px;
+        z-index: 33;
+    }
+    &__navs {
+        margin-top: 40px;
+        @include dFlex(row, space-between, center)
+    }
+    &__link {
+        position: relative;
+        cursor: pointer;
+        margin: 40px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    &__circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 22;
+    }
+    &__site {
+        position: absolute;
+        z-index: 33;
+        &:nth-child(1) {
+            top: 15px;
+            left: 7px;
+        }
+        &:nth-child(2) {
+            top: 15px;
+            left: 8px;
+        }
+        &:nth-child(3) {
+            top: 15px;
+            left: 87px;
+        }
+        &:nth-child(4) {
+            top: 11px;
+            left: 25px;
+        }
+    }
 }
